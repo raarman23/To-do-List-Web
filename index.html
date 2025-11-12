@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List | SM High Tech</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> SM High Tech Industrial Engineering Care </h1>
+    <h2>Course: Web Development</h2>
+    <h3>Trainer: Abdullah Al Mamun</h3>
+  </header>
+
+  <section class="form-section">
+    <h4>Add Class Work</h4>
+    <form id="todoForm">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="text" id="polytechnic" placeholder="Your Polytechnic" required>
+      <input type="text" id="classNo" placeholder="Class No" required>
+      <input type="date" id="classDate" required>
+      <input type="text" id="tools" placeholder="Class Tools Used" required>
+      <input type="text" id="details" placeholder="Class Work Details" required>
+      <input type="text" id="remarks" placeholder="Remarks">
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section class="table-section">
+    <h4>Class Work Record</h4>
+    <div class="table-wrapper">
+      <table id="todoTable">
+        <thead>
+          <tr>
+            <th>Your Name</th>
+            <th>Your Polytechnic</th>
+            <th>Class No</th>
+            <th>Class Date</th>
+            <th>Class Tools Used</th>
+            <th>Class Work Details</th>
+            <th>Remarks</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic rows appear here -->
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <footer>
+    <p>Submitted by: <strong>Arman Hossain</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
